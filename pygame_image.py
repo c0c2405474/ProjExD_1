@@ -18,8 +18,10 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
+        x=x%3200
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img2, [-x+1600, 0])
+        screen.blit(bg_img, [-x+3200, 0])
         screen.blit(kk_img, [300, 200])
         pg.display.update()
         x += 1        
